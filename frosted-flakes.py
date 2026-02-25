@@ -4,9 +4,14 @@ data = json.load(pokedex)
 types = open("./types.json", encoding="utf8")
 t_data = json.load(types)
 t_datas = []
-
+lang_list = ["english, japanese, chinese, french"]
 lang = input("Choose a language: English, Japanese, Chinese, French ")
-x = lang.lower()
+z = lang.lower()
+
+while z not in lang_list:
+    newlang = input("Language not found. Please enter a language from the list  ")
+    x = newlang.lower()
+
 for item in data:
     print(item["name"][x])
 
