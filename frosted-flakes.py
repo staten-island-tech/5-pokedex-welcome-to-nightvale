@@ -5,10 +5,10 @@ types = open("./types.json", encoding="utf8")
 t_data = json.load(types)
 t_datas = []
 lang_list = ["english, japanese, chinese, french"]
-lang = input("Choose a language: English, Japanese, Chinese, French ")
-z = lang.lower()
+""" lang = input("Choose a language: English, Japanese, Chinese, French ")
+x = lang.lower()
 
-while z not in lang_list:
+while x not in lang_list:
     newlang = input("Language not found. Please enter a language from the list  ")
     x = newlang.lower()
 
@@ -21,9 +21,9 @@ typ = input(f"Select a type: {t_datas} ")
 y = typ.lower()
 for item in data:
     if item["type"] == y:
-        print(item["name"][x])
+        print(item["name"][x]) """
 
-""" lang = input("Choose a language: English, Japanese, Chinese, French ")
+lang = input("Choose a language: English, Japanese, Chinese, French ")
 x = lang.lower()
 for item in data:
     print(item["name"][x])
@@ -34,7 +34,8 @@ typ = input(f"Select a type: {t_datas} ")
 y = typ.lower()
 z = []
 for item in data:
-    if item["type"] == y:
-        z.append(item["type"])
+    z.append
+    print(item["name"]["type"][y])
+        
 for i in z:
-    print(i) """
+    print(i)
