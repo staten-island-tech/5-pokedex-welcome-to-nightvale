@@ -23,6 +23,23 @@ for item in data:
     if item["type"] == y:
         print(item["name"][x]) """
 
+""" lang = input("Choose a language: English, Japanese, Chinese, French ")
+x = lang.lower()
+for item in data:
+    print(item["name"][x])
+
+for item in t_data:
+    t_datas.append(item[x])
+typ = input(f"Select a type: {t_datas} ")
+y = typ.lower()
+z = []
+for item in data:
+    z.append
+    print(item["name"][typ][y])
+        
+for i in z:
+    print(i) """
+
 lang = input("Choose a language: English, Japanese, Chinese, French ")
 x = lang.lower()
 for item in data:
@@ -35,7 +52,7 @@ y = typ.lower()
 z = []
 for item in data:
     z.append
-    print(item["name"]["type"][y])
+    print(item["name"][typ][y])
         
 for i in z:
     print(i)
