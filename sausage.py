@@ -43,18 +43,18 @@ lang("ttts") """
 honi("HHOOONNNIII") """
 
 """ def honi(x):
-    x = x.lower()
-    a = 0
-    b = 0 
-    z = 0
+    y = x.lower()
+    a = 0 #count
+    z = 0 #state
     search = ["h", "o", "n", "i"]
-    for t in x:
+    for t in y:
         if t == search[z]:
             a += 1
             z += 1
-    b = math.floor(a / 4) 
-    print(b)
+            if z > 3:
+                z = 0
+    print(a // 4)
 
-honi("HHHONNNIIi") """
+honi("HHHHONIONIHONY") """
 
 

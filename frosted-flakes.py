@@ -49,10 +49,7 @@ for item in t_data:
     t_datas.append(item[x])
 typ = input(f"Select a type: {t_datas} ")
 y = typ.lower()
-z = []
+
 for item in data:
-    z.append
-    print(item["name"][typ][y])
-        
-for i in z:
-    print(i)
+    if item["type"] == y:
+        print(item)
