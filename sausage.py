@@ -57,4 +57,15 @@ honi("HHOOONNNIII") """
 
 honi("HHHHONIONIHONY") """
 
+""" def grade(num, q, a):
+    y = 0
+    score = 0
+    for i in q:
+        if i == a[y]:
+            score += 1
+        y += 1
+    print(score)
 
+
+grade(5, "AAAAA", "AAACB")
+grade(5, "BBABC", "CCABC") """
