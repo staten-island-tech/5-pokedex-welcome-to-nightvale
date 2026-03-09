@@ -51,5 +51,6 @@ typ = input(f"Select a type: {t_datas} ")
 y = typ.lower()
 
 for item in data:
-    if item["type"] == y:
-        print(item)
+    for it in item["type"]:
+        if it == y:
+            print(item["name"][x])
