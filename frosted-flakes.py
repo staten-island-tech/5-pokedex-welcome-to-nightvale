@@ -57,12 +57,13 @@ for item in data:
             print(item["name"][x])
 
 search = input("Search for a pokemon:  ")
-for pokemon in data:
+for item in data:
+    searchr = search.capitalize()
     count = 0
     s = 0
-    for char in pokemon["name"]:
-        if char == search[count]:
+    for char in item["name"]:
+        if char == searchr[count]:
             count += 1
             s += 1
-    if s > len(search):
-        print(pokemon["name"][x])
+    if s == len(searchr):
+        print(item["name"][x])
