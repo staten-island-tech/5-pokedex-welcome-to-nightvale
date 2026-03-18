@@ -41,7 +41,7 @@ for item in data:
 for i in z:
     print(i) """
 
-lang = input("Choose a language: English, Japanese, Chinese, French ")
+""" lang = input("Choose a language: English, Japanese, Chinese, French ")
 x = lang.lower()
 for item in data:
     print(item["name"][x])
@@ -54,7 +54,7 @@ y = typ.capitalize()
 for item in data:
     for m in item["type"]:
         if m == y:
-            print(item["name"][x])
+            print(item["name"][x]) """
 
 """ e = input("Search for a pokemon:  ")
 search = e.capitalize()
@@ -79,17 +79,23 @@ for item in data:
             if count == length:
                 print(item["name"][x]) """
 
-e = input("Search for a pokemon:  ")
+""" e = input("Search for a pokemon:  ")
 search = e.capitalize()
 length = int(len(search)) - 1
 for item in data:
     count = 0
+    wrong = 0
     for char in item["name"][x]:
         if char == search[count]:
             count += 1
             if count == length:
                 print(item["name"][x])
                 count = 0
+        else:
+            wrong += 1
+            if wrong >= 1:
+                count = 0 """
+
                 
 """ e = input("Search for a pokemon:  ")
 search = e.capitalize()
@@ -102,3 +108,38 @@ for item in data:
                 count += 1
         print(item["name"][x])
         count = 0 """
+
+
+lang = input("Choose a language: English, Japanese, Chinese, French ")
+x = lang.lower()
+for item in data:
+    print(item["name"][x])
+
+for item in t_data:
+    t_datas.append(item[x])
+typ = input(f"Select a type: {t_datas} ")
+y = typ.capitalize()
+
+for item in data:
+    for m in item["type"]:
+        if m == y:
+            print(item["name"][x])
+
+e = input("Search for a pokemon:  ")
+search = e.capitalize()
+length = int(len(search))
+for item in data:
+    count = 0
+    wrong = 0
+    for char in item["name"][x]:
+        if char == search[count]:
+            count += 1
+            if count == length:
+                print(item["name"][x])
+                count = 0
+        else:
+            wrong += 1
+            if wrong >= 1:
+                count = 0
+    if wrong == length:
+        print("no such pokemon was found")
