@@ -128,6 +128,7 @@ for item in data:
 e = input("Search for a pokemon:  ")
 search = e.capitalize()
 length = int(len(search))
+found = 0
 for item in data:
     count = 0
     wrong = 0
@@ -137,9 +138,10 @@ for item in data:
             if count == length:
                 print(item["name"][x])
                 count = 0
+                found += 1
         else:
             wrong += 1
             if wrong >= 1:
                 count = 0
-    if wrong == length:
-        print("no such pokemon was found")
+if found == 0:
+    print("No pokemon was found. ")

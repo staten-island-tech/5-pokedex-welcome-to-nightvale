@@ -24,7 +24,7 @@ occupied(5,"c..c..",".c.cc") """
 
 lang("ttts") """
 
-def honi(x):
+""" def honi(x):
     x = x.lower()
     a = 0
     b = 0
@@ -40,7 +40,7 @@ def honi(x):
     if (a % 4) == 0:
         b = a / 4
     print(b)
-honi("HHOOONNNIII")
+honi("HHOOONNNIII") """
 
 """ def honi(x):
     y = x.lower()
